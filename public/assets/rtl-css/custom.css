@@ -1,0 +1,1247 @@
+/*====================================
+General Styles
+====================================*/
+
+:root {
+    --orange: #cc4f0e;
+    --orange-dark: #9f361b;
+}
+
+@font-face {
+    font-family: "Readex Pro";
+    src: url("../fonts/readex_pro/ReadexPro-Regular.ttf");
+}
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+a {
+    transition: color .3s ease-in-out,
+                background-color .3s ease-in-out;
+}
+
+body .wrapper {
+    min-height: 1000px;
+}
+
+html.dark-theme .card a:hover,
+html.dark-theme .card a:focus,
+.quantity a,
+.features-header a {
+    text-decoration: underline;
+}
+
+.form-control,
+.form-select,
+html.dark-theme .accordion-button:not(.collapsed),
+html.dark-theme .accordion-button  {
+    -webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,.3) !important;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.3) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.3) !important;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.3) !important;
+}
+
+/* Color Orange Group */
+
+html.dark-theme .sidebar-wrapper .sidebar-header .logo-text,
+.page-breadcrumb .breadcrumb li.breadcrumb-item ion-icon,
+.export-icon a,
+.filter-icon a,
+html.dark-theme .btn-close,
+.text-reset,
+html.dark-theme .card a,
+html.dark-theme .nav-tabs .nav-link,
+html.dark-theme .nav-tabs .nav-item.show .nav-link,
+html.dark-theme .nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.export-icon .dropdown-menu ion-icon,
+.export-icon .dropdown-menu ion-icon,
+.imageuploadify,
+.imageuploadify .imageuploadify-images-list span.imageuploadify-message,
+.imageuploadify .imageuploadify-images-list button.btn-default,
+.ff_fileupload_wrap .ff_fileupload_dropzone,
+.btn-outline-secondary,
+.pagination .page-item a.page-link,
+.date-icon ion-icon,
+.delete-category ion-icon {
+    color: var(--orange) !important;
+}
+
+.export-icon a:hover,
+.export-icon a:focus,
+.filter-icon a:hover,
+.filter-icon a:focus,
+html.dark-theme .btn-close:hover,
+html.dark-theme .btn-close:focus,
+.text-reset:hover,
+.text-reset:focus,
+html.dark-theme .card a:hover,
+html.dark-theme .card a:focus,
+html.dark-theme .card a:hover,
+html.dark-theme .card a:focus {
+    color: var(--orange-dark) !important;
+}
+
+.btn-primary,
+.btn-primary:active,
+.form-check-input:checked,
+.page-item.active .page-link,
+.page-item .page-link:hover,
+.pace .pace-progress,
+.back-to-top,
+html.dark-theme .border-bottom,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.dataTable thead tr,
+.form-range::-webkit-slider-thumb,
+.added-features thead tr,
+.suppliers thead tr,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected=true],
+.edit-btn:not(:hover),
+.accordion-header,
+html.dark-theme .card-header,
+html.dark-theme .accordion-button:not(.collapsed),
+html.dark-theme .accordion-button,
+.features-units-wrapper thead tr,
+.reports-charts-2-2 thead tr {
+    background-color: var(--orange) !important;
+}
+
+.btn-primary,
+.btn-primary:active,
+.form-check-input:checked,
+.page-item.active .page-link,
+.imageuploadify .imageuploadify-images-list span.imageuploadify-message,
+.imageuploadify .imageuploadify-images-list button.btn-default,
+.ff_fileupload_wrap table.ff_fileupload_uploads td.ff_fileupload_actions button,
+.ff_fileupload_wrap .ff_fileupload_dropzone,
+.btn-outline-secondary {
+    border-color: var(--orange) !important;
+}
+
+.form-check-input:focus,
+.form-check-input:checked,
+.btn-check:focus + .btn-primary,
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-secondary:focus,
+.btn-secondary:active:focus {
+    box-shadow: 0 0 0 0.25rem var(--orange-dark);
+}
+
+.form-range:focus::-webkit-slider-thumb {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem var(--orange-dark);
+}
+.form-range:focus::-moz-range-thumb {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 .25rem var(--orange-dark);
+}
+
+/* Background-Color Dark Orange Group */
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.back-to-top:hover,
+.back-to-top:focus,
+html.dark-theme .modal-header,
+.form-range::-webkit-slider-thumb:active,
+.edit-btn:hover,
+.edit-btn:focus,
+.edit-btn:active,
+html.dark-theme .sidebar-wrapper .metismenu .mm-active > a,
+html.dark-theme .sidebar-wrapper .metismenu a:active,
+html.dark-theme .sidebar-wrapper .metismenu a:focus,
+html.dark-theme .sidebar-wrapper .metismenu a:hover {
+    background-color: var(--orange-dark) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.form-control:focus,
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.ff_fileupload_wrap table.ff_fileupload_uploads td.ff_fileupload_actions button:hover {
+    border-color: var(--orange-dark) !important;
+}
+
+/* Color White Group */
+
+html.dark-theme .sidebar-wrapper .metismenu a,
+.sidebar-wrapper .metismenu a .parent-icon ion-icon,
+[dir=rtl] .metismenu .has-arrow:after,
+html.dark-theme .sidebar-wrapper .sidebar-header .toggle-icon,
+.btn-primary ion-icon,
+.page-item.active .page-link,
+.page-item .page-link:hover,
+.modal-content .modal-title,
+.offcanvas-title,
+.btn-warning,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.dataTable thead tr,
+table.dataTable>thead .sorting_asc:before,
+table.dataTable>thead .sorting_desc:after,
+.added-features thead tr,
+.suppliers thead tr,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected=true],
+html.dark-theme .card .pagination .page-item.active a,
+.edit-btn,
+.accordion-header,
+html.dark-theme .card-header,
+html.dark-theme .accordion-button:not(.collapsed),
+html.dark-theme .accordion-button,
+.features-units-wrapper thead tr,
+.reports-charts-2-2 thead tr {
+    color: #fff !important;
+}
+
+html.dark-theme .top-header,
+html.dark-theme .form-control,
+html.dark-theme .form-select:not(:disabled),
+html.dark-theme .card,
+html.dark-theme .footer,
+html.dark-theme .page-link,
+html.dark-theme .modal-content,
+html.dark-theme .dropdown-menu,
+.dropdown-item:focus,
+.dropdown-item:hover,
+html.dark-theme .top-header .navbar .dropdown-large .dropdown-menu::after,
+html.dark-theme .top-header .navbar .dropdown-user-setting .dropdown-menu::after,
+html.dark-theme .nav-tabs .nav-item.show .nav-link,
+html.dark-theme .nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover,
+html.dark-theme .offcanvas,
+html.dark-theme .picker__input,
+html.dark-theme .picker__holder,
+html.dark-theme .picker__button--today,
+html.dark-theme .picker__button--clear,
+html.dark-theme .picker__button--close,
+html.dark-theme .select2-container--bootstrap4 .select2-selection,
+.accordion-body {
+    background-color: #fff !important;
+}
+
+html.dark-theme .top-header .navbar .dropdown-large .dropdown-menu::after,
+html.dark-theme .top-header .navbar .dropdown-user-setting .dropdown-menu::after {
+    border-color: #fff;
+}
+
+html.dark-theme body,
+html.dark-theme .top-header .navbar .dropdown-large .dropdown-item:hover,
+html.dark-theme .top-header .navbar .dropdown-user-setting .dropdown-item:hover,
+html.dark-theme .card-footer,
+.export-icon .dropdown-menu a:hover,
+.export-icon .dropdown-menu a:focus,
+.input-group.barcode-input-group,
+html.dark-theme .select2-dropdown,
+html.dark-theme .select2-search--dropdown .select2-search__field,
+html.dark-theme .ff_fileupload_wrap .ff_fileupload_dropzone,
+html.dark-theme .imageuploadify,
+table tr.odd,
+html.dark-theme .accordion-item {
+    background-color: #f7f8fa !important;
+}
+
+html.dark-theme .ff_fileupload_wrap .ff_fileupload_dropzone,
+html.dark-theme .imageuploadify {
+    border-color: #f7f8fa !important;
+}
+
+/* Color Black Group */
+
+html.dark-theme .top-header .navbar .top-navbar-right .nav-link,
+.page-breadcrumb .breadcrumb li a,
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before,
+html.dark-theme .form-control,
+html.dark-theme .form-select,
+html.dark-theme .form-control::placeholder,
+html.dark-theme .dropdown-item,
+html.dark-theme .card,
+html.dark-theme .table,
+.table-striped > tbody > tr:nth-of-type(odd),
+html.dark-theme .footer,
+html.dark-theme .modal-content,
+html.dark-theme .dropdown-large .msg-header .msg-header-title,
+.offcanvas .form-label,
+.offcanvas div,
+html.dark-theme .table, .form-select,
+html.dark-theme .select2-search--dropdown .select2-search__field {
+    color: #252525 !important;
+}
+
+/* Color 50% Black Group */
+
+html.dark-theme .breadcrumb-item.active {
+    color: rgba(0, 0, 0, .5);
+}
+
+/* Border Color Black Group */
+
+html.dark-theme .table,
+.form-select,
+html.dark-theme .select2-search--dropdown .select2-search__field {
+    border-color: #dbdcdf;
+}
+
+html.dark-theme .sidebar-wrapper,
+html.dark-theme .sidebar-wrapper .sidebar-header {
+    background-color: #252525;
+}
+
+/* Font size grouping */
+
+.btn,
+.form-control,
+.form-control::placeholder,
+.form-select,
+.page-breadcrumb .breadcrumb li:not(.active) a,
+.page-breadcrumb .breadcrumb li.breadcrumb-item.active,
+.card-body > * {
+    font-size: 14px !important;
+}
+
+.price p,
+.quantity p,
+.min-quantity p,
+.added-features th,
+.added-features table p {
+    font-size: 12px;
+}
+
+/* Breadcrumb */
+
+.page-breadcrumb .breadcrumb li.breadcrumb-item ion-icon {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.page-breadcrumb .breadcrumb li:not(.active) a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+/* Icons Styles*/
+
+ion-icon{
+    pointer-events: none;
+}
+
+/* Modal Styles */
+
+.modal-header .btn-close {
+    margin-right: 0;
+}
+
+/* Pagination Styles */
+
+.pagination {
+    justify-content: center;
+}
+
+.pace .pace-progress-inner {
+    box-shadow:0 0 10px var(--orange), 0 0 5px var(--orange) !important;
+}
+
+.pace .pace-activity {
+    border-top-color: var(--orange) !important;
+    border-left-color: var(--orange) !important;
+}
+
+/*====================================
+Top Header
+====================================*/
+
+.top-header {
+    padding: 0 0.5rem;
+}
+
+.top-header .navbar .user-img,
+.user-profile-inner img {
+    height: auto;
+}
+
+/*====================================
+Sidebar
+====================================*/
+
+.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .toggle-icon {
+    display: block;
+    margin-right: 0 !important;
+}
+
+/*====================================
+Breadcrumb
+====================================*/
+
+.page-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-left: 0.5rem;
+    font-family: LineIcons;
+    content: "\ea5a";
+}
+
+/*====================================
+Searchbar
+====================================*/
+
+.add-category-btn {
+    top: -53px;
+    left: 0;
+}
+
+.languages-tabs-wrapper {
+    padding: 15px 15px 0;
+}
+
+.searchbar {
+    position: relative;
+}
+
+.searchbar .search-icon {
+    color: #41464b;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.searchbar .form-control {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    border: 1px solid #e9ecef;
+    background-color: #fff;
+}
+
+.searchbar .search-close-icon {
+    left: 2rem;
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+}
+
+.filter-icon {
+    flex: 0 0 auto;
+    width: 5%;
+    position: absolute;
+    left: 5px;
+    top: 32px;
+}
+
+#filter-form {
+    position: relative;
+    height: 100%;
+}
+
+#filter-form .offcanvas-body {
+    height: 100%;
+}
+
+#filter-form .offcanvas-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.picker__button--today:before,
+.picker__button--clear:before,
+.picker__button--close:before {
+    margin-left: .5em;
+}
+
+.single-select {
+    width: 100%;
+}
+
+html.dark-theme .btn-close {
+    filter: unset;
+}
+
+.offcanvas-end {
+    width: 400px;
+}
+
+html.dark-theme .select2-container--bootstrap4 .select2-selection {
+    color: #444 !important;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #aaa !important;
+}
+
+html.dark-theme .select2-container--bootstrap4 .select2-selection b {
+    border-color: #888 transparent transparent transparent !important;
+}
+
+.ff_fileupload_wrap .ff_fileupload_dropzone {
+    background-image: none !important;
+    height: 200px !important;
+}
+
+.ff_fileupload_wrap .ff_fileupload_uploads {
+    direction: ltr;
+}
+
+html.dark-theme .ff_fileupload_wrap .ff_fileupload_dropzone,
+html.dark-theme .imageuploadify {
+    padding: 10px;
+}
+
+.ff_fileupload_wrap .ff_fileupload_dropzone > a {
+    margin-left: 10px;
+}
+
+.ff_fileupload_wrap table.ff_fileupload_uploads td.ff_fileupload_actions button {
+    margin-right: 5px;
+}
+
+.categories-table .row:first-child {
+    margin-bottom: 20px !important;
+    margin-top: 10px !important;
+    align-items: center;
+}
+
+.categories-table .row:first-child > div:first-child {
+    padding-right: 0;
+}
+
+div.dataTables_wrapper {
+    flex-basis: 100%;
+}
+
+.table-custom-controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rows-count {
+    display: flex;
+    align-items: center;
+}
+
+.rows-count .form-label {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.table-search {
+    position: relative;
+}
+
+.table-search input {
+    padding-right: 30px;
+}
+
+.table-search ion-icon {
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 7px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, .2);
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: left !important;
+}
+
+div.dataTables_wrapper div.dataTables_length label,
+#categories_filter label,
+#products_filter label,
+.categories-table .row:last-child > div:first-child,
+table#categories.dataTable>thead th:nth-child(4):after,
+table#categories.dataTable>thead th:nth-child(4):before,
+table#categories.dataTable>thead th:nth-child(7):after,
+table#categories.dataTable>thead th:nth-child(7):before,
+table.dataTable>thead th:nth-child(8):after,
+table.dataTable>thead th:nth-child(8):before,
+table.dataTable>thead th:last-child:after,
+table.dataTable>thead th:last-child:before,
+table#products.dataTable>thead th:nth-child(9):after,
+table#products.dataTable>thead th:nth-child(9):before {
+    display: none;
+}
+
+table.table-bordered.dataTable td:last-child,
+table.table-bordered.dataTable td:last-child {
+    border-right-width: 0 !important;
+}
+
+div.dataTables_wrapper div.dataTables_length span {
+    margin-left: 5px;
+}
+
+#categories_filter,
+#products_filter {
+    position: relative;
+}
+
+#categories_filter ion-icon,
+#products_filter ion-icon {
+    position: absolute;
+    color: #a0a3a5;
+    font-size: 1.2rem;
+    top: 5px;
+    right: 10px;
+}
+
+#categories_filter input,
+#products_filter input {
+    padding-right: 35px;
+    width: 100%;
+}
+
+table.dataTable>thead .sorting:before,
+table.dataTable>thead .sorting:after,
+table.dataTable>thead .sorting_asc:before,
+table.dataTable>thead .sorting_asc:after,
+table.dataTable>thead .sorting_desc:before,
+table.dataTable>thead .sorting_desc:after,
+table.dataTable>thead .sorting_asc_disabled:before,
+table.dataTable>thead .sorting_asc_disabled:after,
+table.dataTable>thead .sorting_desc_disabled:before,
+table.dataTable>thead .sorting_desc_disabled:after {
+    opacity: .7 !important;
+}
+
+table.dataTable>thead .sorting:before,
+table.dataTable>thead .sorting_asc:before,
+table.dataTable>thead .sorting_desc:before,
+table.dataTable>thead .sorting_asc_disabled:before,
+table.dataTable>thead .sorting_desc_disabled:before {
+    right: auto !important;
+    left: 1em !important;
+}
+
+table.dataTable>thead .sorting:after,
+table.dataTable>thead .sorting_asc:after,
+table.dataTable>thead .sorting_desc:after,
+table.dataTable>thead .sorting_asc_disabled:after,
+table.dataTable>thead .sorting_desc_disabled:after {
+    right: auto !important;
+    left: .5em !important;
+}
+
+table.dataTable>thead>tr>th:not(.sorting_disabled),
+table.dataTable>thead>tr>td:not(.sorting_disabled) {
+    padding-left: 30px !important;
+    padding-right: 8px !important;
+}
+
+table.dataTable thead th {
+    text-align: center;
+}
+
+table.dataTable tbody td {
+    border-width: 1px 0;
+    text-align: center;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    justify-content: center !important;
+}
+
+html.dark-theme .card table a:hover,
+html.dark-theme .card table a:focus,
+html.dark-theme .card .pagination a:hover,
+html.dark-theme .card .pagination a:focus {
+    text-decoration: none;
+}
+
+html.dark-theme .card .page-link:focus {
+    box-shadow: none;
+}
+
+.paginate_button.page-item {
+    margin: 0 2px;
+}
+
+/*====================================
+Categories Products
+====================================*/
+
+#categories-products {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table .modal {
+    text-align: right;
+}
+
+#categories-products th {
+    position: relative;
+}
+
+#categories-products td:not(:last-child) a {
+    display: block;
+}
+
+#categories-products .sort:before,
+#categories-products .sort:after {
+    position: absolute;
+    bottom: 0.7em;
+    display: block;
+}
+
+#categories-products .sort:before {
+    left: 1em;
+    content: "↑";
+}
+
+#categories-products .sort:after {
+    left: .5em;
+    content: "↓";
+}
+
+.select2-container {
+    width: auto !important;
+    min-width: 115px;
+}
+
+.delete-category {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.delete-category input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+}
+
+.delete-category ion-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+tr.sub-parent {
+    background-color: #edeef1;
+}
+
+tr.sub-child {
+    background-color: #d2d4d9;
+}
+
+/*====================================
+Products
+====================================*/
+
+table#products {
+    vertical-align: middle;
+}
+
+table#products th {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+table#products th span:last-child {
+    font-size: 10px;
+}
+
+table.dataTable>thead .sorting:before,
+table.dataTable>thead .sorting:after,
+table.dataTable>thead .sorting_asc:before,
+table.dataTable>thead .sorting_asc:after,
+table.dataTable>thead .sorting_desc:before,
+table.dataTable>thead .sorting_desc:after,
+table.dataTable>thead .sorting_asc_disabled:before,
+table.dataTable>thead .sorting_asc_disabled:after,
+table.dataTable>thead .sorting_desc_disabled:before,
+table.dataTable>thead .sorting_desc_disabled:after {
+    bottom: auto;
+    top: calc(50% - 9px);
+}
+
+table#products td {
+    font-size: 12px;
+}
+
+table#products td ion-icon {
+    font-size: 18px;
+}
+
+.range-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-product-modal .accordion-body .input-group,
+.show-product-modal .quantity {
+    align-items: center;
+}
+
+.show-product-modal .accordion-body .input-group label,
+.show-product-modal .quantity label {
+    margin-bottom: 0;
+    margin-left: 16px;
+    min-width: 125px;
+}
+
+.show-product-modal .input-group :disabled,
+.show-product-modal .quantity :disabled
+.show-product-modal .description :disabled,
+html.dark-theme .form-control:disabled,
+html.dark-theme .form-select:disabled {
+    background-color: rgb(238, 238, 238) !important;
+}
+
+.show-product-modal .name-barcode {
+    flex-wrap: wrap;
+}
+
+.show-product-modal .name-barcode .input-group {
+    flex-basis: 100%;
+}
+
+.show-product-modal .name-barcode .input-group:first-child {
+    margin-bottom: 24px;
+}
+
+.select2-container .select2-selection--single {
+    height: 35px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 35px !important;
+}
+
+.show-product-modal .images .field-show {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.show-product-modal .images .field-show img {
+    margin-bottom: 10px;
+}
+
+.show-product-modal .features .select2 {
+    margin-left: 10px;
+}
+
+table#products td:last-child > div > * {
+    margin-left: 7px;
+}
+
+table#products td:last-child > div .modal-dialog {
+    margin-left: auto;
+}
+
+/*====================================
+Create Products
+====================================*/
+
+html.dark-theme .nav-tabs {
+    border-bottom: 1px solid var(--orange);
+}
+
+html.dark-theme .nav-tabs .nav-item.show .nav-link,
+html.dark-theme .nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: var(--orange) var(--orange) #fff;
+}
+
+html.dark-theme .card-header,
+html.dark-theme .card-footer {
+    border: 1px solid #dbdcdf;
+}
+
+.card-header ion-icon {
+    margin-left: 5px;
+}
+
+.add-item-form .card-body > div {
+    justify-content: space-between;
+}
+
+.add-item-form .card-body > div > .input-group {
+    width: 48%;
+    display: flex;
+    align-items: center;
+}
+
+.add-item-form .form-label {
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+.input-group.barcode-input-group {
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.description .form-label {
+    margin-bottom: .75rem;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    display: none;
+}
+
+.accordion-button:not(.collapsed) ion-icon:last-child {
+    margin-right: auto;
+    transform: rotate(180deg);
+    transition: transform .3s ease-in-out;
+}
+
+.accordion-button.collapsed ion-icon:last-child {
+    margin-right: auto;
+    transform: rotate(0deg);
+}
+
+.added-features thead tr th:not(:first-child),
+.suppliers thead tr th:not(:first-child) {
+    border-right-width: 1px;
+}
+
+/*====================================
+Upload Images and Files
+====================================*/
+
+.images label,
+.files label {
+    flex-basis: 60px;
+}
+
+.images ion-icon,
+.files ion-icon,
+.features ion-icon,
+.added-features ion-icon,
+.suppliers ion-icon,
+.ingredients ion-icon,
+.manufact-procs ion-icon,
+.modal-content .modal-title,
+.ff_fileupload_dropzone ion-icon,
+.btn ion-icon {
+    margin: auto;
+}
+
+.images p,
+.files p {
+    font-size: 12px;
+    margin-right: 85px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.quantity .form-select,
+.features select,
+.config-features select,
+.manufact-procs select {
+    width: auto;
+}
+
+.min-quantity .form-control,
+.ingredients input[type=number] {
+    width: 75px;
+}
+
+.quantity .form-control,
+.features input,
+.added-features input,
+.suppliers input[type=number] {
+    width: 120px;
+}
+
+.features select:not(:first-child),
+.features select:not(:first-child) + input {
+    display: none;
+}
+
+.config-features .form-check-input,
+.config-features .form-check-label {
+    cursor: pointer;
+}
+
+.form-switch .form-check-input:not(:checked):focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .25);
+}
+
+.add-feature-btn button,
+.add-supplier-btn button {
+    width: 200px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+    justify-content: center;
+}
+
+.add-feature-btn button ion-icon {
+    margin-top: -2px;
+}
+
+html.dark-theme .added-features .table,
+html.dark-theme .suppliers .table,
+html.dark-theme .ingredients .table {
+    vertical-align: middle;
+}
+
+#supplier-code {
+    width: 155px;
+}
+
+#ingredient-main-item,
+#ingredient-sub-item {
+    width: 220px;
+}
+
+.form-actions button {
+    position: relative;
+}
+
+.form-actions ion-icon {
+    position: absolute;
+    top: calc(100% - 7px);
+    right: calc(50% - 40px);
+    font-size: 20px;
+}
+
+.hidden,
+.hidden + .ff_fileupload_wrap {
+    display: none;
+}
+
+/*====================================
+Edit Products
+====================================*/
+
+.copy-product {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: auto;
+}
+
+/*====================================
+Inventory Settings
+====================================*/
+
+.features-units-wrapper table {
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.min-quantity-settings form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.min-quantity-settings form label {
+    margin-bottom: 0;
+}
+
+/*====================================
+Inventory Reports
+====================================*/
+
+.reports-icons {
+    position: absolute;
+    left: 0;
+    top: -49px;
+}
+
+.date-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.date-icon ion-icon {
+    position: absolute;
+    cursor: pointer;
+}
+
+.date-icon .datepicker-custom {
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+
+.date-icon .picker {
+    left: 0;
+    top: 25px;
+    width: 300px;
+}
+
+.reports-totals {
+    align-items: center;
+}
+
+.report-total {
+    border: 1px solid var(--orange);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 120px;
+    text-align: center;
+}
+
+.report-total span {
+    flex-basis: 50%;
+}
+
+.report-total span:first-child {
+    font-size: .8rem;
+}
+
+.report-total span:last-child {
+    font-size: 1.5rem;
+}
+
+.reports-charts {
+    text-align: center;
+}
+
+.reports-charts .reports-charts-1 > div > span {
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.categories-main-sub .apexcharts-legend {
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories-main-sub .apexcharts-tooltip-series-group {
+    color: #fff;
+}
+
+#items-categories-main-sub,
+#products-categories-main-sub {
+    min-height: 400px !important;
+}
+
+.apexcharts-legend-series {
+    position: relative;
+}
+
+.apexcharts-legend-marker {
+    position: absolute;
+    left: auto !important;
+    right: 0;
+    top: 5px !important;
+}
+
+.apexcharts-tooltip-series-group {
+    justify-content: center;
+}
+
+html.dark-theme .apexcharts-text tspan {
+    fill: #252525;
+}
+
+.reports-charts-2-2 th,
+.reports-charts-2-2 td {
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+/*====================================
+Inventory Processes
+====================================*/
+
+.withdraw-add-btn {
+    top: -55px;
+    left: 0;
+}
+.withdraw-add-btn .modal label {
+    margin-bottom: 0;
+}
+
+.withdraw-add-btn .modal input[type="number"] {
+    width: 100px;
+}
+
+.processes-filter {
+    width: 370px;
+}
+.processes-filter .offcanvas-body > * {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(37, 37, 37, .3);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-right: 0;
+}
+
+.processes-filter .offcanvas-body > *:last-child {
+    border-bottom: 0;
+}
+
+.processes-filter .offcanvas-body > * label {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.processes-filter .form-check .form-check-input {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.processes-filter .left-quantity-wrapper {
+    flex-wrap: wrap;
+}
+
+.processes-filter .left-quantity-wrapper > * {
+    flex-basis: 29%;
+}
+
+.processes-filter .left-quantity-wrapper label {
+    flex-basis: 100%;
+    margin-bottom: 8px;
+}
+
+.processes-filter .left-quantity-wrapper select {
+    flex-basis: 35%;
+}
+
+.show-process-modal .input-group {
+    align-items: center;
+}
+
+.show-process-modal .input-group label {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    min-width: 140px;
+}
+
+.show-process-modal .input-group input {
+    font-size: 12px !important;
+}
